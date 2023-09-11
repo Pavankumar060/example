@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## E-Commerce Website Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple E-commerce site was developed using different aspects from existed ecommerce sites.
+Since as pasrt of frontend only , No apis were used here but the processes invloived in API integrations ands Products management was delt by using an array of products and array methods.
 
-## Available Scripts
+## Challenge Details
 
-In the project directory, you can run:
+# Product Listing
 
-### `npm start`
+- Displayed products with images, names, prices, and "Add to Cart" & 'Remove' buttons.
+- Implemented filters to sort products by category, price and ratings.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Shopping Cart
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Implemented a cart section to display the added products, quantities, and total cost.
+- Users can increase, decrease, or remove items from the cart.
+- Displayed real-time updates of the cart total and item count.
 
-### `npm test`
+# Checkout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Implemented a checkout process that calculates the total cost of items in the cart.
+- Users need to enter shipping information and payment details.
 
-### `npm run build`
+# Responsive Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Whole website is responsive and works seamlessly on both desktop and mobile devices.
+- Optimized the layout for different screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project structure follows typical React conventions, with components organized logically in a folder structure. Here is an example of the project structure:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+markdown
+Copy code
 
-### `npm run eject`
+- src/
+  - components/
+    - Home.js
+    - Cart.js
+    - Checkout.js
+    - cartoperations
+  - App.js
+  - index.js
+- data/
+  - products.js
+- public/
+- README.md
+- package.json
+- ...
+  The data/products.js file contains an array of products that will be used throughout the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The components/cartoperations file contains functionality of saving and retreiving cart items from local storage with validity of 7days.
