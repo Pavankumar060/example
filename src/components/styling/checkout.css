@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.checkout {
+    margin: 25px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout button {
+    padding: 20px;
+}
+
+.checkout button:active {
+    background-color: aquamarine;
+    color: white;
+}
+
+.button {
+    font-size: 24px;
+    padding: 12px 28px;
+    margin: 20px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    background-color: #ff9f00;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form input {
+    font-size: 32px;
+}
+
+form label {
+    font-size: 16px;
+    color: #676767;
+}
+
+.label {
+    margin: 12px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.form .card_info {
+    display: flex;
+}
+
+@media(max-width :456px) {
+    form {
+        flex-direction: column;
+    }
+
+    .checkout button {
+        padding: 6px;
+    }
+
+    .button {
+        padding: 8px 14px;
+        font-size: 14px;
+        margin: 6px;
+    }
+}
