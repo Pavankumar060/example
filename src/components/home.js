@@ -50,9 +50,9 @@ export const Home = () => {
   // };
   // adding sorting functionality
   const sortedLH =
-    sort == 1 ? filterArray3.sort((a, b) => a.price - b.price) : filterArray3;
+    sort === 1 ? filterArray3.sort((a, b) => a.price - b.price) : filterArray3;
   const sortedHL =
-    sort == 2 ? [...sortedLH].sort((a, b) => b.price - a.price) : sortedLH;
+    sort === 2 ? [...sortedLH].sort((a, b) => b.price - a.price) : sortedLH;
   const sortedLR =
     sort === 3 ? [...sortedHL].sort((a, b) => a.rating - b.rating) : sortedHL;
   const sortedHR =
@@ -96,7 +96,7 @@ export const Home = () => {
 
       <div className="Nav_bar">
         <div className="nav_logo">
-          <a
+          <p
             onClick={() => {
               setProducts(ProductsList);
               setSort("");
@@ -104,45 +104,45 @@ export const Home = () => {
             }}
           >
             <img src={logo} alt="brand_logo" />
-          </a>
+          </p>
         </div>
 
         <ul className="nav_items">
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(1);
               }}
             >
               Top Wear
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(2);
               }}
             >
               Bottom Wear
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(3);
               }}
             >
               Men
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(4);
               }}
             >
               Women
-            </a>
+            </p>
           </li>
           {/* cart  */}
           <div className="cart_info">
@@ -170,40 +170,40 @@ export const Home = () => {
       <div className={`IInd_list ${menu && "open"}`}>
         <ul className={` small_items `}>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(1);
               }}
             >
               Top Wear
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(2);
               }}
             >
               Bottom Wear
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(3);
               }}
             >
               Men
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               onClick={() => {
                 setFilter(4);
               }}
             >
               Women
-            </a>
+            </p>
           </li>
         </ul>
       </div>
@@ -261,13 +261,22 @@ export const Home = () => {
               <div key={100 + i} className="card">
                 <Carousel fade controls={false} indicators={false}>
                   <CarouselItem>
-                    <img src={product.img[0]} alt="1" />
+                    <img
+                      src={product.img[0]}
+                      alt={`img1Of${product.product_id}`}
+                    />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={product.img[1]} alt="2" />
+                    <img
+                      src={product.img[1]}
+                      alt={`img2Of${product.product_id}`}
+                    />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={product.img[2]} alt="3" />
+                    <img
+                      src={product.img[2]}
+                      alt={`img3Of${product.product_id}`}
+                    />
                   </CarouselItem>
                 </Carousel>
                 <div className="rating">

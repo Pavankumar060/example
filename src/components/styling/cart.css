@@ -11,11 +11,11 @@
     background-color: black;
 }
 
-.nav_bar a {
+.nav_bar p {
     cursor: pointer;
 }
 
-.nav_bar a img {
+.nav_bar p img {
     height: 45px;
     width: 280px;
     min-width: 195px;

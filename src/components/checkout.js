@@ -12,13 +12,13 @@ export const Checkout = () => {
   return (
     <>
       <div className="nav_bar">
-        <a
+        <p
           onClick={() => {
             window.location.href = "/";
           }}
         >
-          <img src={img} alt="" />
-        </a>
+          <img src={img} alt="checkout_img" />
+        </p>
       </div>
       <div className="checkout">
         <h4>Check - Out</h4>

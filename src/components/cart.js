@@ -45,13 +45,13 @@ export const CartInfo = () => {
   return (
     <>
       <div className="nav_bar">
-        <a
+        <p
           onClick={() => {
             window.location.href = "/";
           }}
         >
-          <img src={img} alt="" />
-        </a>
+          <img src={img} alt="cart_home" />
+        </p>
       </div>
       <div className="cart_dashboard">
         <div className="cart_Dash">
@@ -60,7 +60,7 @@ export const CartInfo = () => {
           </h5>
         </div>
         <div>
-          {cartProducts.map((product, i) => {
+          {cartProducts.map((product, index) => {
             // setting quantity for products
             const quantity = (array, id) => {
               let count = 0;
@@ -77,8 +77,8 @@ export const CartInfo = () => {
             saveCart("cost", TotalCost);
             return (
               <>
-                <div key={200 + i} className="cart_card">
-                  <img src={product.img[0]} alt="cart1" />
+                <div key={200 + index} className="cart_card">
+                  <img src={product.img[0]} alt={`cart${index}`} />
                   <div className="div">
                     <p>
                       <span>{product.brand}</span> {product.product_Name}
