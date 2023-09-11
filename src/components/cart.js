@@ -78,7 +78,7 @@ export const CartInfo = () => {
             return (
               <>
                 <div key={200 + i} className="cart_card">
-                  <img src={product.img[0]} alt="" />
+                  <img src={product.img[0]} alt="cart1" />
                   <div className="div">
                     <p>
                       <span>{product.brand}</span> {product.product_Name}

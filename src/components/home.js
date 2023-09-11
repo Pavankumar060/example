@@ -261,13 +261,13 @@ export const Home = () => {
               <div key={100 + i} className="card">
                 <Carousel fade controls={false} indicators={false}>
                   <CarouselItem>
-                    <img src={product.img[0]} alt="" />
+                    <img src={product.img[0]} alt="1" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={product.img[1]} alt="" />
+                    <img src={product.img[1]} alt="2" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={product.img[2]} alt="" />
+                    <img src={product.img[2]} alt="3" />
                   </CarouselItem>
                 </Carousel>
                 <div className="rating">
