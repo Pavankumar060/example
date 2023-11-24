@@ -44,10 +44,6 @@ export const Home = () => {
       ? [...filterArray2].filter((filter) => filter.gender === "Female")
       : filterArray2;
 
-  // const filteredArr1 = (value) => {
-  //   const newArray = productsArr.filter((filter) => filter.gender === value);
-  //   setProducts(shuffleArray(newArray));
-  // };
   // adding sorting functionality
   const sortedLH =
     sort === 1 ? filterArray3.sort((a, b) => a.price - b.price) : filterArray3;
